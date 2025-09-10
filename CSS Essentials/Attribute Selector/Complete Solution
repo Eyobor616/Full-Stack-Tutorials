@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attribute Selectors</title>
+  <style>
+    /* Any input with a type attribute */
+    input[type] {
+      border: 2px solid gray;
+      padding: 5px;
+    }
+
+    /* Only text inputs */
+    input[type="text"] {
+      border-color: blue;
+    }
+
+    /* Any link that opens in new tab */
+    a[target="_blank"] {
+      color: red;
+      text-decoration: underline dotted;
+    }
+  </style>
+</head>
+<body>
+  <h2>Attribute Selectors</h2>
+
+  <input type="text" placeholder="Text input">
+  <input type="password" placeholder="Password input">
+  <a href="https://example.com" target="_blank">Opens in new tab</a>
+  <a href="https://example.com">Normal link</a>
+</body>
+</html>
