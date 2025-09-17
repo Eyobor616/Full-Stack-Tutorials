@@ -6,9 +6,14 @@
     <title>Acme</title>
     <link rel="stylesheet" href="style5.css" />
     <style>
+      :root {
+        --radius: 15px;
+        --maxwidth: 1200px;
+      }
+      }
+
       * {
         box-sizing: border-box;
-      }
       body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -24,14 +29,53 @@
         text-align: left;
       }
 
+      .brand {
+        max-width: var(--maxwidth);
+        margin: 0 auto;
+        color: white;
+      }
+
       #card {
-        max-width: 700px;
-        border: 1px solid #ccc;
-        border-radius: 15px;
-        padding: 20px 10px;
+        max-width: var(--maxwidth);
+        border: 1px solid #d4d1d1;
+        border-radius: var(--radius);
+        padding: 20px 30px;
         margin: 20px auto;
       }
 
+      hr {
+        border: 0;
+        height: 1px;
+        background: rgb(228, 224, 224);
+        margin: 20px 0;
+      }
+
+      #inner-card {
+        border: 1px solid #d4d1d1;
+        border-radius: var(--radius);
+        padding: 15px 20px;
+        background: white;
+        width: 50%;
+      }
+
+      h1 {
+        color: darkblue;
+      }
+      h2 {
+        color: blue;
+      }
+
+      #button {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 16px;
+        color: white;
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+      }
       footer {
         text-align: center;
         padding: 10px 0;
@@ -51,7 +95,7 @@
         about page,extended acrodd the site
       </p>
 
-      <br />
+      <hr />
 
       <section id="inner-card">
         <h2>What we do</h2>
