@@ -55,6 +55,26 @@
         gap: 20px;
         align-items: center;
       }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .gallery {
+        background-color: white;
+        border: 1px solid black;
+        flex: 1;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+
+        margin: 10px;
+      }
     </style>
   </head>
   <body>
@@ -68,7 +88,38 @@
           </ul>
         </nav>
       </header>
-      <main></main>
+      <main>
+        <div class="gallery">
+          <img
+            src="https://placeholderimagegenerator.com/wp-content/uploads/2024/12/Light-placeholder-image-circule_png_.png"
+            alt=""
+          />
+          <img
+            src="https://placeholderimagegenerator.com/wp-content/uploads/2024/12/Light-placeholder-image-circule_png_.png"
+            alt=""
+          />
+          <img
+            src="https://placeholderimagegenerator.com/wp-content/uploads/2024/12/Light-placeholder-image-circule_png_.png"
+            alt=""
+          />
+        </div>
+        <div class="gallery">
+          <img
+            src="https://placeholderimagegenerator.com/wp-content/uploads/2024/12/Light-placeholder-image-circule_png_.png"
+            alt=""
+          />
+          <img
+            src="https://placeholderimagegenerator.com/wp-content/uploads/2024/12/Light-placeholder-image-circule_png_.png"
+            alt=""
+          />
+        </div>
+        <div class="gallery">
+          <img
+            src="https://placeholderimagegenerator.com/wp-content/uploads/2024/12/Light-placeholder-image-circule_png_.png"
+            alt=""
+          />
+        </div>
+      </main>
       <footer></footer>
     </div>
   </body>
